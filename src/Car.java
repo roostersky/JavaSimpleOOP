@@ -65,12 +65,12 @@ public class Car {
 		System.out.println(counter + ") CREATOR " + company_creator + " MODEL " + model + " COUNTRY " + country_creator
 				+ " CAR NUMBER " + carNumber + " PRICE " + price + " " + valute);
 	}
-	
+
 	// Show info about cars STRING
 	public String showInfoAboutCarString() {
 		return counter + ") CREATOR " + company_creator + " MODEL " + model + " COUNTRY " + country_creator
-				+ " CAR NUMBER " + carNumber + " PRICE " + price + " " + valute +"\n";
-		
+				+ " CAR NUMBER " + carNumber + " PRICE " + price + " " + valute + "\n";
+
 	}
 
 }

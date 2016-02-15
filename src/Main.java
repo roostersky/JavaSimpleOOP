@@ -7,9 +7,8 @@ import java.util.ArrayList;
 public class Main {
 
 	public static void main(String[] args) {
-		
-		
-		// Simple text 
+
+		// Simple text
 		System.out.println("CARS TABLE LIST ");
 		System.out.println(" ");
 
@@ -21,10 +20,10 @@ public class Main {
 		Car car5 = new Car(7000, '£', 1246893, "Reno", "Fluence", "French");
 		Car car6 = new Car(200000, '₴', 9325453, "Wolksvagen", "Touareg", "Germany");
 		Car car7 = new Car(40000, '$', 5324363, "Cadillac", "Escalade", "USA");
-		
+
 		// Create carList
 		ArrayList<Car> carList = new ArrayList<>();
-		
+
 		// Add car object to carList
 		carList.add(car1);
 		carList.add(car2);
@@ -33,45 +32,37 @@ public class Main {
 		carList.add(car5);
 		carList.add(car6);
 		carList.add(car7);
-		
+
 		// File for DATA
-		File fileData = new File("C:\\Users\\Mykola\\workspace\\OOP_for_Git\\Data\\Cars_List");
-		
+		File fileData = new File("C:\\Users\\Mykola\\workspace\\OOP_for_Git\\resault\\Cars_List");
+
 		// Exception block try-catch
 		try {
 			FileWriter writer = new FileWriter(fileData);
-			
+
 			// Show info about cars from carList
 			for (int i = 0; i < carList.size(); i++) {
-				
+
 				// Show info
 				carList.get(i).showInfoAboutCar();
-				
+
 				// data get line with info about car object
 				String data = carList.get(i).showInfoAboutCarString();
-				
+
 				// Write info to file Cars_List
 				writer.write(data);
-				
+
 			}
-			
+
 			// Final operations with FileWriter
 			writer.flush();
 			writer.close();
-			
-			
-			
-			
+
 		} catch (IOException e) {
 			// Show exception information
 			e.printStackTrace();
 		}
-		
-	
-		
-		
 
-		
 	}
 
 }

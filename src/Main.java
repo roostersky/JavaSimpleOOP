@@ -1,8 +1,13 @@
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
 import java.util.ArrayList;
 
 public class Main {
 
 	public static void main(String[] args) {
+		
 		
 		// Simple text 
 		System.out.println("CARS TABLE LIST ");
@@ -30,11 +35,31 @@ public class Main {
 		carList.add(car7);
 		
 		
-		// Show info about cars from carList
-		for (int i = 0; i < carList.size(); i++) {
-			carList.get(i).showInfoAboutCar();
+		File fileData = new File("C:\\Users\\Mykola\\workspace\\OOP_for_Git\\Data\\Cars_List");
+		try {
+			FileWriter writer = new FileWriter(fileData);
 			
+			// Show info about cars from carList
+			for (int i = 0; i < carList.size(); i++) {
+				carList.get(i).showInfoAboutCar();
+				
+				String data = carList.get(i).showInfoAboutCarString();
+				writer.write(data);
+				
+			}
+			writer.flush();
+			writer.close();
+			
+			
+			
+			
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
+		
+	
+		
+		
 
 		
 	}

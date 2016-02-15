@@ -60,6 +60,7 @@ public class Car {
 
 	}
 
+	// Show info about car
 	public void showInfoAboutCar() {
 		System.out.println(counter + ") CREATOR " + company_creator + " MODEL " + model + " COUNTRY " + country_creator
 				+ " CAR NUMBER " + carNumber + " PRICE " + price + " " + valute);

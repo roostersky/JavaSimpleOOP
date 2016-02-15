@@ -1,5 +1,8 @@
 # This license file for this project
-
+------------------------------------
 DATE: 15-02-2016
 TIME: 11.27
-TASK: Example OOP Java project 
+MAIN TASK: Example OOP Java project 
+SUB TASK 1 : Show information about cars in console
+SUB TASK 2 : Write DATA to file Cars_List.txt
+

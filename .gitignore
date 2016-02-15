@@ -1,4 +1,4 @@
 # Ignore this files in GitHub
 
-/license/versionController.txt
-/.gitignore
+license/versionController.txt
+.gitignore

@@ -21,6 +21,7 @@ public class Main {
 		Car car6 = new Car(200000, '₴', 9325453, "Wolksvagen", "Touareg", "Germany");
 		Car car7 = new Car(40000, '$', 5324363, "Cadillac", "Escalade", "USA");
 		Car car8 = new Car(80000, '₴', 9236433, "Mazda", "MPV4", "Japan");
+		Car car9 = new Car(19000, '₴', 9354961, "Opel", "Vectra", "Germany");
 		
 		// Create carList
 		ArrayList<Car> carList = new ArrayList<>();
@@ -34,6 +35,7 @@ public class Main {
 		carList.add(car6);
 		carList.add(car7);
 		carList.add(car8);
+		carList.add(car9);
 		
 		// File for DATA
 		File fileData = new File("C:\\Users\\Mykola\\workspace\\OOP_for_Git\\resault\\Cars_List");

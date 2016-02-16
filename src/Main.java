@@ -13,7 +13,7 @@ public class Main {
 		System.out.println(" ");
 
 		// Create car objects
-		Car car1 = new Car(3000, '£', 5643445, "Doblo", "Fiat", "French");
+		Car car1 = new Car(3000, '£', 5643445, "Fiat", "Doblo", "French");
 		Car car2 = new Car(25000, '$', 3404390, "BMW", "X5", "Germany");
 		Car car3 = new Car(90000, '₴', 9437249, "Reno", "Duster", "French");
 		Car car4 = new Car(5000, '£', 7324924, "Wolksvagen", "Touran", "Germany");

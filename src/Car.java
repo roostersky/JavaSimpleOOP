@@ -1,4 +1,4 @@
-
+// Car class
 public class Car {
 
 	// Variables
@@ -47,7 +47,7 @@ public class Car {
 	}
 
 	// Constructor
-	public Car(int price, char valute, int carNumber, String model, String company_creator, String country_creator) {
+	public Car(int price, char valute, int carNumber, String company_creator, String model, String country_creator) {
 		this.price = price;
 		this.carNumber = carNumber;
 		this.counter = counter;
